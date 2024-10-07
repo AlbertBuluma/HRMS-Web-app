@@ -102,7 +102,7 @@ class StaffController extends Controller
             'Content-Type' => 'application/json',
             'Accept' => 'application/json',
         ])->withToken('1|TCF1plXy2UU6gEaCNn2V6btHu0pkWM6prfcPF6XD3fc44002')
-            ->patch('http://127.0.0.1:8010/api/staff/'.$id,
+            ->patch('http://127.0.0.1:8010'.'/api/staff/'.$id,
                 [
                     'surname' => $request->input('surname'),
                     'other_name' => $request->input('other_name'),
