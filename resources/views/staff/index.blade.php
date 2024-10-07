@@ -1,13 +1,13 @@
 <x-app-layout>
     <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
+        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
             {{ __('List of Company Staff') }}
         </h2>
     </x-slot>
 
     <div class="py-3">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 space-y-6">
-            {{--                        <div class="p-4 sm:p-8 bg-white dark:bg-gray-800 shadow sm:rounded-lg">--}}
+            {{--                        <div class="p-4 sm:p-8 bg-white shadow sm:rounded-lg">--}}
             <div class="max-w-xl">
                 <div class="py-2">
                     <div class="flex items-center gap-4">
@@ -23,13 +23,13 @@
             <div class="overflow-hidden w-auto">
                 <table class="table-fixed text-left text-sm font-light text-surface ">
                     <thead
-                        class="border-b border-neutral-200 font-medium dark:border-white/10">
+                        class="border-b border-neutral-200 font-medium">
                     <tr>
                         <th scope="col" class="px-6 py-4">Staff ID</th>
                         <th scope="col" class="px-6 py-4">Surname</th>
                         <th scope="col" class="px-6 py-4">Other Names</th>
                         <th scope="col" class="px-6 py-4">Date of Birth</th>
-                        <th scope="col" class="px-6 py-4">Encoded Photo ID</th>
+                        <th scope="col" class="px-6 py-4">ID Photo (Base 64 Encoded)</th>
                         <th scope="col" class="px-6 py-4">Action</th>
                     </tr>
                     </thead>
