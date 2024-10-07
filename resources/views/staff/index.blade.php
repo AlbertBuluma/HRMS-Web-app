@@ -11,7 +11,7 @@
             <div class="max-w-xl">
                 <div class="py-2">
                     <div class="flex items-center gap-4">
-                        <a href="{{ route('create-staff') }}">
+                        <a href="{{ route('staff.create') }}">
                             <x-primary-button>{{ __('Create Staff') }}</x-primary-button>
                         </a>
                     </div>
@@ -34,7 +34,7 @@
                     </tr>
                     </thead>
                     <tbody>
-                    @foreach ($staff_list['data'] as $staff)
+                    @forelse ($staff_list['data'] as $staff)
                         <tr class="border-b border-neutral-200 transition duration-300 ease-in-out">
                             <td class="whitespace-nowrap px-6 py-4 font-medium">{{ $staff['staff_id'] }}</td>
                             <td class="whitespace-nowrap px-6 py-4">{{ $staff['attributes']['surname'] }}</td>
@@ -56,7 +56,11 @@
                                 </div>
                             </td>
                         </tr>
-                    @endforeach
+                    @empty
+                        <tr class="border-b border-neutral-200 transition duration-300 ease-in-out">
+                            <td class="whitespace-nowrap px-6 py-4">No data available</td>
+                        </tr>
+                    @endforelse
                     </tbody>
                 </table>
             </div>
