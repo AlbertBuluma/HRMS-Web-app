@@ -89,7 +89,8 @@ Ensure you have the following in place:
 ``
 
 #### 2. Clone your Laravel project from GitHub:
-``git clone https://github.com/AlbertBuluma/HRMS-Web-app.git`` \
+``git clone https://github.com/AlbertBuluma/HRMS-Web-app.git`` 
+
 ``cd HRMS-Web-app``
 
 #### 2.3 Docker Setup for Laravel
