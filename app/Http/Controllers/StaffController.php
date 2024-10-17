@@ -130,7 +130,7 @@ class StaffController extends Controller
             ]);
 
         if ($response->successful()) {
-            return redirect('home');
+            return redirect('dashboard');
         } else {
             dd($response->json());
             return view('staff.create')->withErrors($response->json());
